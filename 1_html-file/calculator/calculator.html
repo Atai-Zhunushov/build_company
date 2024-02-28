@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>БСК Калькулятор</title>
+
+  <!-- responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- For IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/animate.css">
+  <link rel="stylesheet" href="../assets/css/aos.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="../assets/css/custom-animate.css">
+  <link rel="stylesheet" href="../assets/css/fancybox.min.css">
+  <link rel="stylesheet" href="../assets/css/flaticon.css">
+  <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/imp.css">
+  <link rel="stylesheet" href="../assets/css/jquery-ui.css">
+  <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="../assets/css/owl.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <link rel="stylesheet" href="../assets/css/scrollbar.css">
+  <link rel="stylesheet" href="../assets/css/icomoon.css">
+  <link rel="stylesheet" href="../assets/css/jquery.bootstrap-touchspin.css">
+  <link rel="stylesheet" href="../assets/css/nice-select.css">
+
+  <!-- Module css -->
+  <link rel="stylesheet" href="../assets/css/module-css/header-section.css">
+  <link rel="stylesheet" href="../assets/css/module-css/banner-section.css">
+  <link rel="stylesheet" href="../assets/css/module-css/about-section.css">
+  <link rel="stylesheet" href="../assets/css/module-css/blog-section.css">
+  <link rel="stylesheet" href="../assets/css/module-css/fact-counter-section.css">
+  <link rel="stylesheet" href="../assets/css/module-css/faq-section.css">
+  <link rel="stylesheet" href="../assets/css/module-css/contact-page.css">
+  <link rel="stylesheet" href="calculator-page.css">
+  <link rel="stylesheet" href="../assets/css/module-css/breadcrumb-section.css">
+  <link rel="stylesheet" href="../assets/css/module-css/team-section.css">
+  <link rel="stylesheet" href="../assets/css/module-css/partner-section.css">
+  <link rel="stylesheet" href="../assets/css/module-css/testimonial-section.css">
+  <link rel="stylesheet" href="../assets/css/module-css/services-section.css">
+  <link rel="stylesheet" href="../assets/css/module-css/footer-section.css">
+
+  <link href="../assets/css/color/theme-color.css" id="jssDefault" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-16x16.png" sizes="16x16">
+
+  <!-- Fixing Internet Explorer-->
+  <!--[if lt IE 9]>
+    <script src="../http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div class="boxed_wrapper ltr">
+
+  <!-- Preloader -->
+  <div class="loader-wrap">
+    <div class="preloader"><div class="preloader-close">Preloader Close</div></div>
+    <div class="layer layer-one"><span class="overlay"></span></div>
+    <div class="layer layer-two"><span class="overlay"></span></div>
+    <div class="layer layer-three"><span class="overlay"></span></div>
+  </div>
+  
+  <!-- Main header-->
+  <header class="main-header header-style-one">
+    <!--Start Header Top-->
+    <div class="header-top">
+      <div class="auto-container">
+        <div class="outer-box">
+
+          <div class="header-top__left">
+            <div class="header-contact-info text-right-rtl">
+              <ul>
+                <li>
+                  <div class="icon">
+                    <span class="flaticon-pin-1"></span>
+                  </div>
+                  <div class="text">
+                    <h6>г.Бишкек, ул.Шабдан Батыра 71 (Проспект Чуй 71)</h6>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="flaticon-clock"></span>
+                  </div>
+                  <div class="text">
+                    <h6>ПН - ПТ 9.00 - 17.00</h6>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="flaticon-phone-call-2"></span>
+                  </div>
+                  <div class="text">
+                    <h6><a href="tel:123456789">+996 500 97 00 77</a></h6>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="header-top__right">
+            <div class="header-social-link">
+              <div class="social-link">
+                <ul class="clearfix">
+                  <li>
+                    <a href="https://www.instagram.com/panelikg"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/bishkekwelding"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a href="tel:+996500970077"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://wa.me/+996500970077"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--End Header Top-->
+
+
+    <!--Start Header-->
+    <div class="header">
+      <div class="header-shape-bg" style="background-image: url(../assets/images/shape/header-shape.png);"></div>
+      <div class="auto-container">
+        <div class="outer-box">
+          <div class="header-left">
+            <div class="logo">
+              <a href="../index.html"><img src="../assets/images/resources/logo.png" alt="Awesome Logo" title=""></a>
+            </div>
+          </div>
+
+          <div class="header-middle">
+            <div class="nav-outer style1 clearfix">
+                <!--Mobile Navigation Toggler-->
+                <div class="mobile-nav-toggler">
+                    <div class="inner">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </div>
+                </div>
+                <!-- Main Menu -->
+                <nav class="main-menu style1 navbar-expand-md navbar-light">
+                    <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                        <ul class="navigation clearfix">
+                            <li class="dropdown current"><a href="#">Главная</a>
+                                <ul>
+                             
+                                    <li class="dropdown"><a href="#">Кровельные сэндвич-панели </a>
+                                        <ul>
+                                            <li><a href="bazalt_krovlya.html">Утеплитель Базальт</a></li>
+                                            <li><a href="penoplast_krovlya.html">Утеплитель Пенопласт</a></li>
+                                            <li><a href="pirpur_krovlya.html">Утеплитель PIR\PUR</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Стеновые сэндвич-панели </a>
+                                        <ul>
+                                            <li><a href="Bazalt_stena.html">Утеплитель Базальт</a></li>
+                                            <li><a href="penoplast_stena.html">Утеплитель Пенопласт</a></li>
+                                            <li><a href="pirpur_stena.html">Утеплитель PIR\PUR</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="index-2.html">Фасонные эллементы</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about_us.html">О нас </a></li>
+                            <li><a href="#">Проекты</a> </li>
+                            <li><a href="calculator/calculator.html">Расчет сэндвич-панелей</a> </li>
+                            <li><a href="contact.html">Контакты</a></li>
+                            <li><a href="Price.pdf"target="_blank">Прайс-лист</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Main Menu End-->
+            </div>
+        </div>
+
+          <div class="header-right">
+           
+            <div class="thm-space-box-2"></div>
+            <div class="header-right_buttom">
+              <div class="btns-box">
+                <a class="btn-one" href="../contact.html">
+                  <span class="txt">Скачать прайслист</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--End header-->
+
+    <!--Sticky Header-->
+    <div class="sticky-header">
+      <div class="container">
+        <div class="clearfix">
+          <!--Logo-->
+          <div class="logo float-left">
+            <a href="../index.html" class="img-responsive"><img src="../assets/images/resources/sticky-logo.png" alt="" title=""></a>
+          </div>
+          <!--Right Col-->
+          <div class="right-col float-right">
+            <!-- Main Menu -->
+            <nav class="main-menu clearfix">
+              <!--Keep This Empty / Menu will come through Javascript-->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Sticky Header-->
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+      <div class="menu-backdrop"></div>
+      <div class="close-btn"><span class="icon fa fa-times-circle"></span></div>
+      <nav class="menu-box">
+        <div class="nav-logo"><a href="../index.html"><img src="../assets/images/resources/mobilemenu-logo.png" alt="" title=""></a></div>
+        <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+        <!--Social Links-->
+        <div class="social-links">
+          <ul class="clearfix">
+            <li><a href="#"><span class="fab fa fa-facebook-square"></span></a></li>
+            <li><a href="#"><span class="fab fa fa-twitter-square"></span></a></li>
+            <li><a href="#"><span class="fab fa fa-pinterest-square"></span></a></li>
+            <li><a href="#"><span class="fab fa fa-google-plus-square"></span></a></li>
+            <li><a href="#"><span class="fab fa fa-youtube-square"></span></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- End Mobile Menu -->
+  </header>
+
+
+  
+
+
+
+  <!--Start Calculator-->
+  <section class="calculator">
+    <div class="container">
+      <h1 class="sec-title">КАЛЬКУЛЯТОР СЭНДВИЧ - ПАНЕЛЕЙ</h1>
+      <div class="selects">
+        <div class="select-wrapper">
+          <label for="roof" class="select-label">Тип кровли</label>
+          <select id="roof" class="form-select select">
+            <option value="1">Односкатная</option>
+            <option value="2">Двускатная</option>
+          </select>
+        </div>
+        <div class="select-wrapper">
+          <label for="insulation" class="select-label">Утеплитель</label>
+          <select id="insulation" class="form-select select">
+            <option value="styrofoam">Пенопласт</option>
+            <option value="basalt">Базальт</option>
+          </select>
+        </div>
+        <div class="select-wrapper">
+          <label for="thickness" class="select-label">Толщина утеплителя</label>
+          <select id="thickness" class="form-select select">
+            <option value="50">50</option>
+            <option value="80">80</option>
+            <option value="100">100</option>
+            <option value="120">120</option>
+            <option value="150">150</option>
+            <option value="200">200</option>
+          </select>
+        </div>
+      </div>
+      <div class="content">
+        <div class="left-side">
+          <p>Расчет размеров стен и кровли </p>
+          <div class="inputs">
+            <form id="size">
+              <div class="walls-size">
+                <div class="input-wrapper">
+                  <h5>РАЗМЕР “ СТЕНА 1 ”</h5>
+                  <div class="input">
+                    <label for="width-1" class="input-label">Ширина:</label>
+                    <input type="text" id="width-1" class="form-control" />
+                  </div>
+                  <div class="input">
+                    <label for="height-1">Высота:</label>
+                    <input type="text" id="height-1" class="form-control" />
+                  </div>
+                </div>
+                <div class="input-wrapper">
+                  <h5>РАЗМЕР “ СТЕНА 2 ”</h5>
+                  <div class="input">
+                    <label for="width-2" class="input-label">Ширина:</label>
+                    <input type="text" id="width-2" class="form-control" />
+                  </div>
+                  <div class="input">
+                    <label for="height-in-skate-2" class="input-label">Высота в коньке:</label>
+                    <input type="text" id="height-in-skate-2" class="form-control" />
+                  </div>
+                  <div class="input">
+                    <label for="height-2">Высота:</label>
+                    <input type="text" id="height-2" class="form-control" />
+                  </div>
+                </div>
+                <div class="input-wrapper">
+                  <h5>РАЗМЕР “ СТЕНА 3 ”</h5>
+                  <div class="input">
+                    <label for="width-3" class="input-label">Ширина:</label>
+                    <input type="text" id="width-3" class="form-control" />
+                  </div>
+                  <div class="input">
+                    <label for="height-3">Высота:</label>
+                    <input type="text" id="height-3" class="form-control" />
+                  </div>
+                </div>
+                <div class="input-wrapper">
+                  <h5>РАЗМЕР “ СТЕНА 4 ”</h5>
+                  <div class="input">
+                    <label for="width-4" class="input-label">Ширина:</label>
+                    <input type="text" id="width-4" class="form-control" />
+                  </div>
+                  <div class="input">
+                    <label for="height-in-skate-4" class="input-label">Высота в коньке:</label>
+                    <input type="text" id="height-in-skate-4" class="form-control" />
+                  </div>
+                  <div class="input">
+                    <label for="height-4">Высота:</label>
+                    <input type="text" id="height-4" class="form-control" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="others-size">
+                <p>
+                  Примечание: если у вас нет одного из этих элементов, введите 0 во все поля данного элемента
+                </p>
+                <div class="others-size-wrapper">
+                  <div class="others-size-block">
+                    <h5>ВОРОТА</h5>
+                    <div class="others-size-input-count-wrapper">
+                      <div class="others-size-input">
+                        <label for="gates-count" class="input-label">Количество (шт)</label>
+                        <input type="text" id="gates-count" class="form-control"   />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="others-size-input-wrapper">
+                    <div class="others-size-input">
+                      <label for="gates-width" class="input-label">Ширина</label>
+                      <input type="text" id="gates-width" class="form-control"   />
+                    </div>
+                    <div class="others-size-input">
+                      <label for="gates-height" class="input-label">Высота</label>
+                      <input type="text" id="gates-height" class="form-control"   />
+                    </div>
+                  </div>
+                </div>
+                <div class="others-size-wrapper">
+                  <div class="others-size-block">
+                    <h5>ДВЕРИ</h5>
+                    <div class="others-size-input-count-wrapper">
+                      <div class="others-size-input">
+                        <label for="doors-count" class="input-label">Количество (шт)</label>
+                        <input type="text" id="doors-count" class="form-control"   />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="others-size-input-wrapper">
+                    <div class="others-size-input">
+                      <label for="doors-width" class="input-label">Ширина</label>
+                      <input type="text" id="doors-width" class="form-control"   />
+                    </div>
+                    <div class="others-size-input">
+                      <label for="doors-height" class="input-label">Высота</label>
+                      <input type="text" id="doors-height" class="form-control"   />
+                    </div>
+                  </div>
+                </div>
+                <div class="others-size-wrapper">
+                  <div class="others-size-block">
+                    <h5>ОКНА</h5>
+                    <div class="others-size-input-count-wrapper">
+                      <div class="others-size-input">
+                        <label for="windows-count" class="input-label">Количество (шт)</label>
+                        <input type="text" id="windows-count" class="form-control"   />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="others-size-input-wrapper">
+                    <div class="others-size-input">
+                      <label for="windows-width" class="input-label">Ширина</label>
+                      <input type="text" id="windows-width" class="form-control"   />
+                    </div>
+                    <div class="others-size-input">
+                      <label for="windows-height" class="input-label">Высота</label>
+                      <input type="text" id="windows-height" class="form-control"   />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="one-roof-images">
+            <img src="../assets/images/calculator/1-roof-image.svg" alt="roof" />
+            <img src="../assets/images/calculator/1-roof-others-image.svg" alt="others" />
+          </div>
+          <div class="two-roof-images">
+            <img src="../assets/images/calculator/2-roof-image.svg" alt="roof" />
+            <img src="../assets/images/calculator/2-roof-others-image.svg" alt="others" />
+          </div>
+        </div>
+      </div>
+      <div class="result-block">
+        <div>
+          <button class="btn button btn-primary" id="sumButton" type="submit">Рассчитать сумму</button>
+          <div class="result-inputs">
+            <input type="text" id="name" placeholder="Имя" class="form-control" />
+            <div class="phone-input">
+              <span class="prefix">+996</span>
+              <input type="tel" maxlength="9" minlength="9" id="phone" />
+            </div>
+          </div>
+          <div style="display: flex;gap: 10px">
+            <p>Сумма стеновой панели по прайсу:</p>
+            <p class="sum-walls"></p>
+          </div>
+          <div style="display: flex;gap: 10px">
+            <p>Сумма кровельной панели по прайсу:</p>
+            <p class="sum-roof"></p>
+          </div>
+          <div style="display: flex;gap: 10px">
+            <p>ОБЩАЯ ПЛОЩАДЬ СТЕН:</p>
+            <p class="wall-square"></p>
+          </div>
+          <div style="display: flex;gap: 10px">
+            <p>ОБЩАЯ ПЛОЩАДЬ КРОВЛИ:</p>
+            <p class="roof-square"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Calculator-->
+
+  <!--Start footer area -->
+  <footer class="footer-area">
+    <div class="shape3 wow slideInLeft" data-wow-delay="500ms" data-wow-duration="7500ms">
+      <img src="../assets/images/shape/shape-round-3.png" alt="">
+    </div>
+    <div class="shape4 wow slideInRight" data-wow-delay="1000ms" data-wow-duration="6500ms">
+      <img src="../assets/images/shape/shape-round-4.png" alt="">
+    </div>
+    <div class="subscribe-cotent-box">
+      <div class="container">
+        <div class="row text-right-rtl">
+          <div class="col-xl-6 col-lg-6">
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!--Start Footer-->
+    <div class="footer">
+      <div class="shape1 wow slideInLeft" data-wow-delay="500ms" data-wow-duration="4500ms">
+        <img class="float-bob-y" src="../assets/images/shape/footer-hand-1.png" alt="">
+      </div>
+      <div class="shape2 wow slideInRight" data-wow-delay="500ms" data-wow-duration="4500ms">
+        <img src="../assets/images/shape/footer-hand-2.png" alt="">
+      </div>
+      <div class="container">
+        <div class="row text-right-rtl">
+
+          <!--Start single footer widget-->
+          <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 wow animated fadeInUp" data-wow-delay="0.1s">
+            <div class="single-footer-widget marbtm50">
+              <div class="our-company-info">
+                <div class="footer-logo">
+                  <a href="../index.html"><img src="../assets/images/footer/footer-logo.png"
+                                            alt="" /></a>
+                </div>
+                <div class="text-box">
+                  <p>Мы – динамично развивающаяся компания которая занимается производством и монтажом многослойных сэндвич-панелей в Кыргызстане, соответствующих мировым стандартам качества на высокоточных атоматических линиях производства Австралийской компании BONDOR.</p>
+                </div>
+                <div class="footer-social-link">
+                  <ul class="clearfix">
+                    <li> <a href="https://www.instagram.com/panelikg"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li> <a href="https://www.facebook.com/bishkekwelding"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li> <a href="tel:+996500970077"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+                    <li> <a href="https://wa.me/+996500970077"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--End single footer widget-->
+          <!--Start single footer widget-->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.3s">
+            <div class="single-footer-widget margin__top">
+              <div class="title">
+                <h3>Меню</h3>
+              </div>
+              <div class="footer-widget-links">
+                <ul>
+                  <li><a href="index.html" target="_blank">БСК</a></li>
+                  <li><a href="projects.html"target="_blank">ПРОЕКТЫ</a></li>
+                  <li><a href="Price.pdf"target="_blank">ПРАЙС-ЛИСТ</a></li>
+                  <li><a href="#">АКЦИЯ</a></li>
+                  <li><a href="index.html">ПРОДУКЦИЯ</a></li>
+                  <li><a href="contact.html">КОНТАКТЫ</a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+          <!--End single footer widget-->
+          <!--Start single footer widget-->
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.5s">
+            <div class="single-footer-widget margin__top pdtop50">
+              <div class="title">
+                <h3>КОНТАКТЫ</h3>
+              </div>
+              <div class="footer-widget-contact-info">
+                <ul>
+                  <li>
+                    <div class="inner">
+                      <div class="icon mapmarker">
+                        <span class="flaticon-maps-and-flags"></span>
+                      </div>
+                      <div class="text">
+                        <p>ул.Шабдан Батыра 71 (Проспект Чуй 71)</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="inner">
+                      <div class="icon">
+                        <span class="flaticon-microphone-black-shape"></span>
+                      </div>
+                      <div class="text">
+                        <p>Позвонить: <a href="tel:+996 500 97 00 77">0 500970077</a></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="inner">
+                      <div class="icon">
+                        <span class="flaticon-email"></span>
+                      </div>
+                      <div class="text">
+                        <p><a href="mailto:bskprokg@gmail.com">bskprokg@gmail.com</a></p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--End single footer widget-->
+        </div>
+      </div>
+    </div>
+    <!--End Footer-->
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="bottom-inner">
+          <div class="copyright">
+            <p>Copyright &copy;<a href="../index.html"> 2023 БСК></a> All Rights Reserved.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--End footer area-->
+
+
+
+
+
+  <button class="scroll-top scroll-to-target" data-target="html">
+    <span class="flaticon-up-arrow"></span>
+  </button>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/aos.js"></script>
+<script src="../assets/js/appear.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/bootstrap-select.min.js"></script>
+<script src="../assets/js/isotope.js"></script>
+<script src="../assets/js/jquery.countTo.js"></script>
+<script src="../assets/js/jquery.easing.min.js"></script>
+<script src="../assets/js/jquery.enllax.min.js"></script>
+<script src="../assets/js/jquery.fancybox.js"></script>
+<script src="../assets/js/jquery.magnific-popup.min.js"></script>
+<script src="../assets/js/jquery.paroller.min.js"></script>
+<script src="../assets/js/jquery-ui.js"></script>
+<script src="../assets/js/knob.js"></script>
+<script src="../assets/js/map-script.js"></script>
+<script src="../assets/js/owl.js"></script>
+<script src="../assets/js/pagenav.js"></script>
+<script src="../assets/js/parallax.min.js"></script>
+<script src="../assets/js/scrollbar.js"></script>
+<script src="../assets/js/TweenMax.min.js"></script>
+<script src="../assets/js/validation.js"></script>
+<script src="../assets/js/wow.js"></script>
+<script src="../assets/js/jquery.nice-select.min.js"></script>
+<script src="../assets/js/color-switcher.min.js"></script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM&callback=initMap">
+</script>
+
+
+<!-- thm custom script -->
+<script src="../assets/js/custom.js"></script>
+<script src="calculator.js"></script>
+
+
+
+</body>
+</html>
